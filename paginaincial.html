@@ -1,0 +1,656 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Royal Suits | Formaturas e Casamentos</title>
+
+    <link rel="stylesheet" href="paginainicial.css">
+
+    <!-- Fonte elegante -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+    <div class="logo">
+        <a href="#">ROYAL <span>SUITS</span></a>
+        <small>FORMATURES • CASAMENTOS</small>
+    </div>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#formaturas">Formaturas</a>
+            <a href="#casamentos">Casamentos</a>
+            <a href="#modelos">Modelos</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <a href="#busca" class="icon-btn" title="Pesquisar">
+                🔍
+            </a>
+
+            <a href="#favoritos" class="icon-btn" title="Favoritos">
+                ♡
+            </a>
+
+            <a href="carrinho.html" class="cart-btn">
+                <span>Carrinho</span>
+                <strong id="contador-carrinho">0</strong>
+            </a>
+
+            <a href="Front-end/Front-end/login.html" class="login-btn">
+                👤 Entrar
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO / CARROSSEL ================= -->
+
+    <section class="carrossel" id="inicio">
+
+        <div class="slides">
+
+            <div class="slide active">
+                <img src="imagens/WhatsApp Image 2026-08-12 at 16.07.48.jpeg"
+                     alt="Coleção de roupas de gala">
+
+                <div class="hero-content">
+
+                    <p class="hero-subtitle">
+                        COLEÇÃO EXCLUSIVA
+                    </p>
+
+                    <h1>
+                        Momentos que<br>
+                        <span>merecem ser inesquecíveis.</span>
+                    </h1>
+
+                    <p class="hero-text">
+                        Encontre o look perfeito para celebrar
+                        os momentos mais importantes da sua vida.
+                    </p>
+
+                    <a href="#modelos" class="hero-btn">
+                        CONHEÇA NOSSA COLEÇÃO
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="slide">
+
+                <img src="image_ny_sdP.png"
+                     alt="Vestido Carmélia Marsala">
+
+                <div class="hero-content">
+
+                    <p class="hero-subtitle">
+                        DESTAQUE DA COLEÇÃO
+                    </p>
+
+                    <h1>
+                        Elegância em<br>
+                        <span>cada detalhe.</span>
+                    </h1>
+
+                    <p class="hero-text">
+                        Vestidos cuidadosamente selecionados
+                        para tornar sua noite ainda mais especial.
+                    </p>
+
+                    <a href="#modelos" class="hero-btn">
+                        VER MODELOS
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Setas -->
+
+        <button class="carousel-btn prev" onclick="mudarSlide(-1)">
+            ❮
+        </button>
+
+        <button class="carousel-btn next" onclick="mudarSlide(1)">
+            ❯
+        </button>
+
+
+        <!-- Indicadores -->
+
+        <div class="indicadores">
+
+            <span class="ponto active" onclick="irParaSlide(0)"></span>
+
+            <span class="ponto" onclick="irParaSlide(1)"></span>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BENEFÍCIOS ================= -->
+
+    <section class="beneficios">
+
+        <div class="beneficio">
+
+            <div class="beneficio-icon">
+                ✦
+            </div>
+
+            <div>
+                <h3>Elegância</h3>
+                <p>Peças selecionadas para ocasiões especiais.</p>
+            </div>
+
+        </div>
+
+
+        <div class="beneficio">
+
+            <div class="beneficio-icon">
+                ♡
+            </div>
+
+            <div>
+                <h3>Qualidade</h3>
+                <p>Materiais e acabamentos cuidadosamente escolhidos.</p>
+            </div>
+
+        </div>
+
+
+        <div class="beneficio">
+
+            <div class="beneficio-icon">
+                ✓
+            </div>
+
+            <div>
+                <h3>Atendimento</h3>
+                <p>Estamos aqui para ajudar você a encontrar o look ideal.</p>
+            </div>
+
+        </div>
+
+
+        <div class="beneficio">
+
+            <div class="beneficio-icon">
+                ✧
+            </div>
+
+            <div>
+                <h3>Momentos únicos</h3>
+                <p>Looks pensados para fazer você brilhar.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIAS ================= -->
+
+    <main>
+
+        <section class="categorias">
+
+            <div class="section-title">
+
+                <p>ENCONTRE SEU ESTILO</p>
+
+                <h2>
+                    Para cada ocasião,<br>
+                    <span>uma escolha especial.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="categorias-grid">
+
+                <a href="#formaturas" class="categoria" id="formaturas">
+
+                    <div class="categoria-overlay"></div>
+
+                    <img src="image_ny_sdP.png"
+                         alt="Moda para formaturas">
+
+                    <div class="categoria-content">
+
+                        <p>COLEÇÃO</p>
+
+                        <h3>Formaturas</h3>
+
+                        <span>Explorar coleção →</span>
+
+                    </div>
+
+                </a>
+
+
+                <a href="#casamentos" class="categoria" id="casamentos">
+
+                    <div class="categoria-overlay"></div>
+
+                    <img src="imagens/WhatsApp Image 2026-08-12 at 16.07.48.jpeg"
+                         alt="Moda para casamentos">
+
+                    <div class="categoria-content">
+
+                        <p>COLEÇÃO</p>
+
+                        <h3>Casamentos</h3>
+
+                        <span>Explorar coleção →</span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUTOS ================= -->
+
+        <section class="produtos-section" id="modelos">
+
+            <div class="section-title centralizado">
+
+                <p>SELEÇÃO ESPECIAL</p>
+
+                <h2>
+                    Nossos <span>modelos</span>
+                </h2>
+
+                <div class="linha"></div>
+
+                <p class="section-description">
+                    Descubra peças selecionadas para transformar
+                    momentos especiais em memórias inesquecíveis.
+                </p>
+
+            </div>
+
+
+            <div class="filtros">
+
+                <button class="filtro ativo">
+                    Todos
+                </button>
+
+                <button class="filtro">
+                    Vestidos
+                </button>
+
+                <button class="filtro">
+                    Formatura
+                </button>
+
+                <button class="filtro">
+                    Casamento
+                </button>
+
+                <button class="filtro">
+                    Masculino
+                </button>
+
+            </div>
+
+
+            <div class="produtos-grid">
+
+
+                <!-- PRODUTO 1 -->
+
+                <div class="produto-card">
+
+                    <div class="produto-imagem">
+
+                        <span class="tag">
+                            DESTAQUE
+                        </span>
+
+                        <button class="favorito">
+                            ♡
+                        </button>
+
+                        <img src="image_ny_sdP.png"
+                             alt="Vestido Carmélia Marsala">
+
+                        <div class="produto-hover">
+
+                            <button onclick="adicionarCarrinho()">
+                                ADICIONAR AO CARRINHO
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="produto-info">
+
+                        <p class="categoria-produto">
+                            VESTIDO • FORMATURA
+                        </p>
+
+                        <h3>
+                            Vestido Carmélia
+                        </h3>
+
+                        <p class="descricao">
+                            Vestido longo na cor marsala, com brilho,
+                            corpete estruturado, pedrarias, alças médias
+                            e elegante fenda lateral.
+                        </p>
+
+                        <div class="produto-bottom">
+
+                            <p class="preco">
+                                R$ 899,00
+                            </p>
+
+                            <button
+                                class="comprar-btn"
+                                onclick="adicionarCarrinho()">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUTO 2 -->
+
+                <div class="produto-card">
+
+                    <div class="produto-imagem">
+
+                        <span class="tag novidade">
+                            NOVO
+                        </span>
+
+                        <button class="favorito">
+                            ♡
+                        </button>
+
+                        <img src="imagens/WhatsApp Image 2026-08-12 at 16.07.48.jpeg"
+                             alt="Modelo de gala">
+
+                        <div class="produto-hover">
+
+                            <button onclick="adicionarCarrinho()">
+                                ADICIONAR AO CARRINHO
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="produto-info">
+
+                        <p class="categoria-produto">
+                            GALA • CASAMENTO
+                        </p>
+
+                        <h3>
+                            Elegance Collection
+                        </h3>
+
+                        <p class="descricao">
+                            Um modelo sofisticado desenvolvido para
+                            ocasiões em que cada detalhe faz diferença.
+                        </p>
+
+                        <div class="produto-bottom">
+
+                            <p class="preco">
+                                R$ 1.099,00
+                            </p>
+
+                            <button
+                                class="comprar-btn"
+                                onclick="adicionarCarrinho()">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUTO 3 -->
+
+                <div class="produto-card">
+
+                    <div class="produto-imagem">
+
+                        <button class="favorito">
+                            ♡
+                        </button>
+
+                        <img src="image_ny_sdP.png"
+                             alt="Vestido de festa">
+
+                        <div class="produto-hover">
+
+                            <button onclick="adicionarCarrinho()">
+                                ADICIONAR AO CARRINHO
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="produto-info">
+
+                        <p class="categoria-produto">
+                            VESTIDO • FESTA
+                        </p>
+
+                        <h3>
+                            Maison Classic
+                        </h3>
+
+                        <p class="descricao">
+                            Design clássico e sofisticado para quem
+                            procura elegância sem abrir mão da personalidade.
+                        </p>
+
+                        <div class="produto-bottom">
+
+                            <p class="preco">
+                                R$ 949,00
+                            </p>
+
+                            <button
+                                class="comprar-btn"
+                                onclick="adicionarCarrinho()">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="ver-todos">
+
+                <button>
+                    VER TODOS OS MODELOS
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BANNER ================= -->
+
+        <section class="banner">
+
+            <img src="image_ny_sdP.png"
+                 alt="Coleção Maison Gala">
+
+            <div class="banner-content">
+
+                <p>MAISON GALA</p>
+
+                <h2>
+                    Seu grande dia<br>
+                    merece um <span>grande look.</span>
+                </h2>
+
+                <p class="banner-text">
+                    Encontre o modelo perfeito para celebrar
+                    seus momentos mais importantes.
+                </p>
+
+                <a href="#modelos">
+                    EXPLORAR COLEÇÃO
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <div>
+
+            <p>FIQUE POR DENTRO</p>
+
+            <h2>
+                Novidades diretamente para você.
+            </h2>
+
+        </div>
+
+        <form>
+
+            <input
+                type="email"
+                placeholder="Seu melhor e-mail"
+                required>
+
+            <button type="submit">
+                INSCREVER
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+                <h2>
+                    MAISON <span>GALA</span>
+                </h2>
+
+                <p>
+                    Elegância para os momentos
+                    que merecem ser lembrados.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Loja</h3>
+
+                <a href="#modelos">Todos os modelos</a>
+                <a href="#formaturas">Formaturas</a>
+                <a href="#casamentos">Casamentos</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Atendimento</h3>
+
+                <a href="#">Fale conosco</a>
+                <a href="#">Trocas e devoluções</a>
+                <a href="#">Dúvidas frequentes</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Redes sociais</h3>
+
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">WhatsApp</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Maison Gala. Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="paginainicial.js"></script>
+
+</body>
+</html>
